@@ -1,0 +1,98 @@
+@import './vars';
+
+.bg_bar_top {
+    background: linear-gradient(to right, #525252, #e3e3e2);
+    // height: calc(100vh - 206px);
+}
+
+.bar_top {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: $tablet_950) {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.bar_top_contact {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+
+    @media screen and (max-width: $mobile_650) {
+        display: grid;
+        gap: 7px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.bar_top_contact_content {
+    
+    a {
+        // display: grid;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        color: $color_white;
+        text-decoration: none;
+        font-size: 18px;
+
+        svg {
+            fill: $color_white;
+            width: 18px;
+        }
+    }
+
+    a:hover, svg:hover {
+        color: $hover_text_gris;
+        fill: $hover_text_gris;
+    }
+
+}
+
+// CONTACTO DE WS
+
+.bar_top_whatsapp {
+    background-color: $color_ws;
+    padding: 3px 7px;
+    border-radius: 7px;
+    
+    a{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-content: center;
+        text-decoration: none;
+        font-size: 23px;
+        color: white;
+        font-weight: 600;
+    }
+
+    svg {
+        fill: $color_white;
+        width: 25px;
+        padding: 3px;
+        border-radius: 7px;
+    }
+
+    @media screen and (max-width: $desktop_1100) {
+        width: 240px;
+        margin: auto;
+    }
+
+    @media screen and (max-width: $tablet_950) {
+        margin-bottom: 10px;
+    }
+}
+
+.bar_top_whatsapp:hover {
+    background-color: #0e6736;
+}

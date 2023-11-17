@@ -1,0 +1,202 @@
+@import "./vars";
+
+.btn_form_call {
+    position: fixed;
+    z-index: 2;
+    background-color: $color_blue_principal;
+    bottom: 100px;
+    right: 0px;
+    // padding: 10px 0;
+    // border-radius: 15px 0 0 15px;
+    display: flex;
+    // grid-row-gap: 1.5em;
+    overflow: hidden;
+    height: 300px;
+    width: 70px;
+    // box-shadow: $shadow;
+    transition: height 0.3s ease;
+
+    // @media screen and (max-width: $mobile_600) {
+    //     height: 15px;
+    //     padding: 5px;
+    // }
+
+    label {
+        display: flex;
+    }
+
+    @media screen and (max-width: 900px) {
+        bottom: 30px;
+    }
+
+    @media screen and (max-width: 500px) {
+        height: 100px;
+        width: 62px;
+    }
+}
+
+.hr {
+    hr {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.btn_form_call.activeFormCall {
+    // height: 20em !important;
+    width: 24em !important;
+
+
+    @media screen and (max-width: 500px) {
+        height: 20em;
+        width: 22em !important;
+    }
+}
+
+.btn_form_call .show {
+    display: grid;
+    gap: 15px;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: start;
+    transform: rotate(270deg);
+    cursor: pointer;
+    width: 74px;
+    height: 480px;
+
+    @media screen and (max-width: 500px) {
+        height: 100px;
+    }
+}
+
+.btn_form_call .show svg {
+    width: 20px;
+    fill: white;
+
+    @media screen and (max-width: $mobile_600) {
+        width: 15px;
+    }
+}
+
+// .btn_form_call .show svg,
+.btn_form_call .form_call form .send_wa a svg {
+    fill: white;
+    width: 20px;
+}
+
+.btn_form_call .show .pshow {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    width: max-content;
+
+    @media screen and (max-width: $mobile_600) {
+        font-size: 16px;
+    }
+
+    @media screen and (max-width: 500px) {
+        display: none;
+    }
+}
+
+.btn_form_call .form_call form {
+    display: grid;
+    justify-items: center;
+    grid-row-gap: 15px;
+    padding: 10px;
+}
+
+.btn_form_call .form_call form select {
+    display: grid;
+    height: 25px;
+    font-size: 15px;
+    padding-left: 5px;
+    background-color: #f2f2f2;
+    color: white;
+    border-radius: 4px;
+}
+
+.btn_form_call .form_call form .gruop input {
+    background-color: #f2f2f2;
+    border: none;
+    height: 43px;
+    // color: white;
+    padding-left: 5px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.btn_form_call .form_call form .politicas {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-column-gap: 6px;
+    padding: 0 10px;
+    color: white;
+
+    a{
+        color: white;
+    }
+
+    input {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+.btn_form_call .form_call form .politicas label {
+    color: white;
+    font-size: 16px !important;
+}
+
+.btn_form_call .form_call form .politicas label a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn_form_call .form_call form .gruop .btn_send_call {
+    background-color: white;
+    color: #323232;
+    padding: 3px 14px;
+    border-radius: 4px;
+    // box-shadow: $shadow;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.btn_form_call .form_call form .gruop button {
+    background-color: white;
+    border: none;
+}
+
+.btn_form_call .form_call form .gruop button img {
+    cursor: pointer;
+    width: 3.5em;
+}
+
+.btn_form_call .form_call form .send_wa a {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-column-gap: 12px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.btn_form_call .form_call form .send_wa a img {
+    width: 100%;
+}
+
+
+.svg_ws {
+    svg {
+        width: 30px !important;
+        background-color: white;
+        fill: $color_blue_principal !important;
+        border-radius: 7px;
+        padding: 3px;
+        transform: rotate(90deg);
+    }
+}

@@ -1,0 +1,50 @@
+@import './vars';
+
+.bg_aliados {
+    background-color: $bg_aliados;
+}
+
+.aliados{
+    margin: 70px 0;
+}
+
+.aliados_title {
+    color: $color_blue_principal;
+    text-align: center;
+    font-size: 25px;
+
+    h2 {
+        font-weight: 300;
+    }
+}
+
+.aliados_img {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 50px 0;
+}
+
+.aliados_img_column {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 1200px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media screen and (max-width: 700px) {
+        grid-template-columns: 1fr;
+    }
+
+    img {
+        max-width: 200px;
+        max-height: 200px;
+        width: 100%;
+        height: 100%;
+    }
+}

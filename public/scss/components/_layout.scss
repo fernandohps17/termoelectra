@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto-Regular', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden; 
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 9fr 1fr;
+    position: relative;
+    max-width: 100%;
+}
+
+.content {
+    display: grid;
+    grid-column: 2/3;
+    max-width: 1600px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+}

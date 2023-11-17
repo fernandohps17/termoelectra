@@ -1,0 +1,111 @@
+@import './vars';
+
+.section_about {
+    margin: 70px 0;
+    display: grid;
+    gap: 20px;
+
+    p{
+        font-size: 19px;
+    }
+
+    span {
+        color: $color_blue_principal;
+        font-weight: 600;
+    }
+}
+
+.section_about_title { 
+    color: $color_blue_principal;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+
+    @media screen and (max-width: 570px) {
+        font-size: 20px;
+    }
+}
+
+.section_about_span {
+    color: $color_blue_principal;
+    font-style: italic;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.section_about_grilla {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 0;
+
+    @media screen and (max-width: $desktop_1100) {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.section_about_grilla_map {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    
+    @media screen and (max-width: $mobile_600) {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.section_about_grilla_map_content {
+
+    li {
+        color: $color_text;
+        text-align: start;
+        font-size: 20px;
+    }
+    
+    li::marker {
+        color: $color_blue_principal;
+        font-size: 25px;
+    }
+}
+
+
+.section_about_grilla_map_img {
+
+    img {
+        // max-width: 300px;
+        // max-height: 300px;
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+    }
+}
+
+.section_about_grilla_client {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    img {
+        // max-width: 300px;
+        // max-height: 80px;
+        width: 300px;
+        height: 80px;
+        object-fit: contain;
+    }
+}
+
+.section_about_list {
+
+    @media screen and (max-width: 400px) {   
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+}
